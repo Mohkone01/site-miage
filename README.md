@@ -30,53 +30,55 @@ Ce projet représente **le module de gestion des demandes de documents** dévelo
 
 ## Captures d'écran
 
+### Interface publique
+
+#### Page d'accueil
+![Page d'accueil](png/CAP1.png)
+*Page d'accueil de la filière MIAGE avec options de connexion et inscription*
+
+#### Formulaire d'inscription
+![Formulaire d'inscription](png/CAP3.png)
+*Formulaire de création de compte étudiant avec informations personnelles et académiques*
+
+#### Page de connexion
+![Page de connexion](png/CAP4.png)
+*Interface de connexion sécurisée pour accéder à l'espace étudiant*
+
 ### Interface étudiant
 
 #### Tableau de bord étudiant
-![Tableau de bord](png/CAP1.png)
-*Vue d'ensemble des demandes et statistiques personnelles*
+![Tableau de bord étudiant](png/CAP5.png)
+*Tableau de bord avec statistiques des demandes, notifications récentes et accès rapide*
 
-#### Formulaire de demande
-![Formulaire de demande](png/CAP3.png)
-*Interface intuitive pour soumettre une nouvelle demande*
-
-#### Suivi des demandes
-![Suivi des demandes](png/CAP4.png)
-*Visualisation en temps réel du statut de chaque demande*
-
-#### Documents générés
-![Documents générés](png/CAP5.png)
-*Consultation et téléchargement des documents finalisés*
+#### Formulaire de demande de document
+![Formulaire de demande](png/CAP11.png)
+*Formulaire détaillé pour soumettre une demande de document administratif*
 
 ### Interface administration
 
-#### Tableau de bord administrateur
-![Dashboard admin](png/CAP7.png)
-*Vue globale avec statistiques et métriques*
+#### Détails d'une demande (Responsable Financier)
+![Validation financière](png/CAP7.png)
+*Vue détaillée d'une demande avec informations étudiant, workflow et actions disponibles*
 
-#### Gestion des demandes
-![Gestion demandes](png/CAP8.png)
-*Interface de traitement et validation des demandes*
+#### Détails d'une demande (Directeur MIAGE)
+![Traitement Direction MIAGE](png/CAP8.png)
+*Interface de traitement d'une demande terminée avec documents justificatifs téléchargeables*
 
-#### Workflow d'approbation
-![Workflow](png/CAP9.png)
-*Suivi du processus d'approbation multi-niveaux*
+#### Tableau de bord Super Admin
+![Dashboard Super Admin](png/CAP9.png)
+*Statistiques globales du système avec utilisateurs, étudiants, administrateurs et demandes actives*
 
-#### Génération de documents
-![Documents admin](png/CAP10.png)
-*Prévisualisation et gestion des documents générés*
+#### Gestion des utilisateurs
+![Gestion des utilisateurs](png/CAP10.png)
+*Interface de gestion complète des comptes utilisateurs avec filtres et actions*
 
-#### Notifications
-![Notifications](png/CAP11.png)
-*Système de notifications en temps réel*
+#### Vérification d'approbation
+![Vérification d'approbation](png/CAP13.png)
+*Page de vérification d'un document généré avec informations détaillées et statut d'approbation*
 
-#### Paramètres
-![Paramètres](png/CAP13.png)
-*Configuration du système et gestion des utilisateurs*
-
-#### Profil utilisateur
-![Profil](png/CAP14.png)
-*Gestion du profil et des préférences*
+#### Document PDF généré
+![Document PDF](png/CAP14.png)
+*Exemple de fiche d'inscription générée automatiquement au format PDF avec photo et informations officielles*
 
 ## Technologies utilisées
 
