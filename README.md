@@ -2,10 +2,6 @@
 
 Module de demande et génération automatique de documents administratifs pour les étudiants
 
-[![Laravel](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com)
-[![PHP](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
-[![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
-
 ## À propos du projet
 
 Ce projet représente **le module de gestion des demandes de documents** développé dans le cadre d'un système universitaire plus large. Il permet aux étudiants de soumettre des demandes de documents administratifs (attestations, certificats, fiches d'inscription, etc.) et de suivre leur traitement à travers un workflow d'approbation multi-niveaux.
