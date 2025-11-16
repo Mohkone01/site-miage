@@ -261,29 +261,19 @@ Les contributions sont les bienvenues ! N'hésitez pas à :
 
 **Pourquoi ?** Ce repository sert de **portfolio et documentation** pour présenter le projet. Le code source complet est maintenu en privé pour des raisons de sécurité et de propriété intellectuelle.
 
-## Licence
-
-Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
-
 ## Auteur
 
 **Mohkone01**
 
 - GitHub: [@Mohkone01](https://github.com/Mohkone01)
 
-## Remerciements
-
-- Laravel Framework
-- Tailwind CSS
-- DomPDF
-- Tous les contributeurs open source
-
 ## Support
 
 Pour toute question ou problème :
 - Ouvrir une issue sur GitHub
 - Consulter la documentation Laravel
+- Contacter-moi via mail(Mon mail: mohkone303@gmail.com)
 
 ---
 
-Si ce projet vous a été utile, n'hésitez pas à lui donner une étoile !
+Si ce projet vous a été utile, n'hésitez pas à me donner une étoile !
