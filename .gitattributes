@@ -1,0 +1,45 @@
+* text=auto eol=lf
+
+# PHP
+*.blade.php diff=html
+*.php diff=php
+
+# Web
+*.css diff=css
+*.html diff=html
+*.js text
+*.json text
+*.md diff=markdown
+
+# Images
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.svg text
+
+# Fonts
+*.woff binary
+*.woff2 binary
+*.ttf binary
+*.eot binary
+
+# Archives
+*.zip binary
+*.tar binary
+*.gz binary
+
+# Documents
+*.pdf binary
+
+# Export ignore (ne pas inclure dans les archives)
+/.github export-ignore
+/tests export-ignore
+/.editorconfig export-ignore
+/.gitattributes export-ignore
+/.gitignore export-ignore
+CHANGELOG.md export-ignore
+phpunit.xml export-ignore
+*.bat export-ignore
+.styleci.yml export-ignore
