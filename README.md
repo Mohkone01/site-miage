@@ -1,34 +1,34 @@
-# 📚 Système de Gestion des Demandes de Documents - MIAGE
+# Système de Gestion des Demandes de Documents - MIAGE
 
-> Module de demande et génération automatique de documents administratifs pour les étudiants
+Module de demande et génération automatique de documents administratifs pour les étudiants
 
 [![Laravel](https://img.shields.io/badge/Laravel-12.x-red.svg)](https://laravel.com)
 [![PHP](https://img.shields.io/badge/PHP-8.2+-blue.svg)](https://php.net)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
 
-## 📋 À propos du projet
+## À propos du projet
 
 Ce projet représente **le module de gestion des demandes de documents** développé dans le cadre d'un système universitaire plus large. Il permet aux étudiants de soumettre des demandes de documents administratifs (attestations, certificats, fiches d'inscription, etc.) et de suivre leur traitement à travers un workflow d'approbation multi-niveaux.
 
-> **⚠️ Note importante** : Ce repository contient **la documentation complète** du module de demande de documents avec captures d'écran et quelques extraits de code d'exemple pour illustrer l'architecture. Le code source complet n'est pas public. Le site universitaire complet comprend également d'autres modules (gestion des cours, notes, emplois du temps, etc.) qui ne sont pas inclus ici.
+**Note importante** : Ce repository contient **uniquement la documentation complète** du module de demande de documents avec captures d'écran pour présenter le projet. Aucun code source n'est inclus dans ce repository public. Le site universitaire complet comprend également d'autres modules (gestion des cours, notes, emplois du temps, etc.) qui ne sont pas documentés ici.
 
-## ✨ Fonctionnalités principales
+## Fonctionnalités principales
 
 ### Pour les étudiants
-- 📝 Soumission de demandes de documents en ligne
-- 📎 Upload de pièces justificatives
-- 🔔 Notifications en temps réel sur l'avancement
-- 📄 Consultation et téléchargement des documents générés
-- 📊 Historique complet des demandes
+- Soumission de demandes de documents en ligne
+- Upload de pièces justificatives
+- Notifications en temps réel sur l'avancement
+- Consultation et téléchargement des documents générés
+- Historique complet des demandes
 
 ### Pour l'administration
-- ✅ Workflow d'approbation multi-niveaux
-- 🔄 Génération automatique de PDF signés électroniquement
-- 👥 Gestion des rôles (Vérificateur, Responsable financier, Directeur MIAGE, Directeur UFR)
-- 📈 Tableau de bord avec statistiques
-- 🔍 Système de recherche et filtrage avancé
+- Workflow d'approbation multi-niveaux
+- Génération automatique de PDF signés électroniquement
+- Gestion des rôles (Secrétaire, Responsable financier, Directeur MIAGE, Directeur UFR)
+- Tableau de bord avec statistiques
+- Système de recherche et filtrage avancé
 
-## 🖼️ Captures d'écran
+## Captures d'écran
 
 ### Interface étudiant
 
@@ -78,7 +78,7 @@ Ce projet représente **le module de gestion des demandes de documents** dévelo
 ![Profil](png/CAP14.png)
 *Gestion du profil et des préférences*
 
-## 🛠️ Technologies utilisées
+## Technologies utilisées
 
 ### Backend
 - **Laravel 12.x** - Framework PHP moderne
@@ -98,9 +98,9 @@ Ce projet représente **le module de gestion des demandes de documents** dévelo
 - **NPM** - Gestionnaire de paquets JavaScript
 - **Vite** - Build tool moderne
 
-## 📦 Installation
+## Informations techniques
 
-### Prérequis
+### Prérequis système
 
 - PHP >= 8.2
 - Composer
@@ -108,65 +108,19 @@ Ce projet représente **le module de gestion des demandes de documents** dévelo
 - Node.js >= 18.x
 - Extension PHP GD (pour la génération de PDF avec images)
 
-### Étapes d'installation
+### Stack technique
 
-1. **Cloner le repository**
-```bash
-git clone https://github.com/Mohkone01/site-miage.git
-cd site-miage
-```
+Le projet utilise une architecture Laravel standard avec :
+- Modèle MVC (Model-View-Controller)
+- Eloquent ORM pour la gestion de la base de données
+- Blade pour les templates
+- Middleware pour la gestion des rôles et permissions
+- Services pour la logique métier
+- Notifications pour les alertes en temps réel
 
-2. **Installer les dépendances PHP**
-```bash
-composer install
-```
+**Note** : Le code source complet n'est pas disponible dans ce repository public. Cette section présente uniquement les informations techniques pour comprendre l'architecture du projet.
 
-3. **Installer les dépendances JavaScript**
-```bash
-npm install
-```
-
-4. **Configurer l'environnement**
-```bash
-cp .env.example .env
-php artisan key:generate
-```
-
-5. **Configurer la base de données**
-
-Éditer le fichier `.env` :
-```env
-DB_CONNECTION=mysql
-DB_HOST=127.0.0.1
-DB_PORT=3306
-DB_DATABASE=universite_miage
-DB_USERNAME=votre_utilisateur
-DB_PASSWORD=votre_mot_de_passe
-```
-
-6. **Exécuter les migrations**
-```bash
-php artisan migrate
-```
-
-7. **Générer les données de test (optionnel)**
-```bash
-php artisan db:seed
-```
-
-8. **Compiler les assets**
-```bash
-npm run build
-```
-
-9. **Démarrer le serveur**
-```bash
-php artisan serve
-```
-
-Le site sera accessible sur `http://localhost:8000`
-
-## 🔧 Configuration
+## Configuration
 
 ### Extension PHP GD
 
@@ -190,35 +144,35 @@ chmod -R 775 storage bootstrap/cache
 chown -R www-data:www-data storage bootstrap/cache
 ```
 
-## 📱 Responsive Design
+## Responsive Design
 
 Le système est entièrement responsive et optimisé pour :
-- 📱 Smartphones (iOS & Android)
-- 📱 Tablettes
-- 💻 Ordinateurs de bureau
-- 🖥️ Grands écrans
+- Smartphones (iOS & Android)
+- Tablettes
+- Ordinateurs de bureau
+- Grands écrans
 
 Tous les composants s'adaptent automatiquement à la taille de l'écran pour une expérience utilisateur optimale.
 
-## 🔐 Rôles et permissions
+## Rôles et permissions
 
 Le système implémente un contrôle d'accès basé sur les rôles (RBAC) :
 
 | Rôle | Permissions |
 |------|------------|
 | **Étudiant** | Soumettre des demandes, consulter ses documents |
-| **Vérificateur** | Vérifier les demandes initiales |
+| **Secrétaire** | Vérifier les demandes initiales |
 | **Responsable Financier** | Approuver les aspects financiers |
 | **Responsable Niveau** | Valider les demandes de son niveau |
 | **Directeur MIAGE** | Traiter les demandes MIAGE |
 | **Directeur UFR** | Approbation finale |
 
-## 📊 Workflow des demandes
+## Workflow des demandes
 
 ```
 Étudiant soumet demande
     ↓
-Vérificateur valide
+Secrétaire valide
     ↓
 Responsable financier approuve
     ↓
@@ -233,7 +187,9 @@ Document généré automatiquement
 Étudiant notifié et peut télécharger
 ```
 
-## 🎨 Architecture du code
+## Architecture du code
+
+Structure générale du projet (à titre informatif) :
 
 ```
 app/
@@ -267,27 +223,19 @@ resources/
     └── app.js                                # JavaScript principal
 ```
 
-## 🧪 Tests
+**Note** : Cette structure est présentée à titre informatif pour comprendre l'organisation du projet. Le code source n'est pas disponible dans ce repository.
 
-```bash
-# Exécuter tous les tests
-php artisan test
+## Types de documents supportés
 
-# Tests avec couverture
-php artisan test --coverage
-```
+- Attestation de fréquentation
+- Certificat de scolarité
+- Relevé de notes
+- Attestation de réussite
+- Fiche d'inscription
+- Attestation de stage
+- Certificat de fin d'études
 
-## 📝 Types de documents supportés
-
-- 📄 Attestation de fréquentation
-- 📄 Certificat de scolarité
-- 📄 Relevé de notes
-- 📄 Attestation de réussite
-- 📄 Fiche d'inscription
-- 📄 Attestation de stage
-- 📄 Certificat de fin d'études
-
-## 🤝 Contribution
+## Contribution
 
 Les contributions sont les bienvenues ! N'hésitez pas à :
 
@@ -297,43 +245,42 @@ Les contributions sont les bienvenues ! N'hésitez pas à :
 4. Push vers la branche (`git push origin feature/AmazingFeature`)
 5. Ouvrir une Pull Request
 
-## 📦 Contenu de ce repository
+## Contenu de ce repository
 
-### ✅ Ce qui est inclus
+### Ce qui est inclus
 
-- **Documentation complète** : README détaillé, guides de déploiement, documentation technique
-- **Captures d'écran** : 11 images illustrant toutes les fonctionnalités
-- **Architecture** : Description détaillée du système et du workflow
-- **Exemples de code** : Quelques extraits pour illustrer la structure
-- **Configuration** : Fichiers de configuration de base (composer.json, package.json)
+- **Documentation complète** : README détaillé avec description du projet et des fonctionnalités
+- **Captures d'écran** : 11 images illustrant toutes les interfaces et fonctionnalités
+- **Architecture** : Description détaillée du système, du workflow et de la structure
+- **Informations techniques** : Stack technologique et prérequis système
 
-### ❌ Ce qui n'est PAS inclus
+### Ce qui n'est PAS inclus
 
-- **Code source complet** : Le code backend et frontend complet n'est pas public
-- **Autres modules** : Gestion des cours, notes, emplois du temps, etc.
+- **Code source** : Aucun code source n'est disponible dans ce repository public
+- **Autres modules** : Seul le module de demande de documents est documenté
 - **Données sensibles** : Aucune donnée de production ou information confidentielle
-- **Logique métier complète** : Les services et la logique métier restent privés
+- **Configuration privée** : Aucun fichier de configuration avec données sensibles
 
-> **💡 Pourquoi ?** Ce repository sert de **portfolio et documentation** pour présenter le projet. Le code source complet est maintenu en privé pour des raisons de sécurité et de propriété intellectuelle.
+**Pourquoi ?** Ce repository sert de **portfolio et documentation** pour présenter le projet. Le code source complet est maintenu en privé pour des raisons de sécurité et de propriété intellectuelle.
 
-## 📄 Licence
+## Licence
 
 Ce projet est sous licence MIT. Voir le fichier `LICENSE` pour plus de détails.
 
-## 👨‍💻 Auteur
+## Auteur
 
 **Mohkone01**
 
 - GitHub: [@Mohkone01](https://github.com/Mohkone01)
 
-## 🙏 Remerciements
+## Remerciements
 
 - Laravel Framework
 - Tailwind CSS
 - DomPDF
 - Tous les contributeurs open source
 
-## 📞 Support
+## Support
 
 Pour toute question ou problème :
 - Ouvrir une issue sur GitHub
@@ -341,4 +288,4 @@ Pour toute question ou problème :
 
 ---
 
-⭐ Si ce projet vous a été utile, n'hésitez pas à lui donner une étoile !
+Si ce projet vous a été utile, n'hésitez pas à lui donner une étoile !
